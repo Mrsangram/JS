@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>onchanges</title>
+</head>
+<body>
+      <h1>Onchange in javascript</h1>
+         <h3>Select the city Name:</h3>
+          <select id="sel" onchange="myChange()">
+             <option value="Mumbai">Mumbai</option>
+             <option value="New Delhi">New Delhi</option>
+             <option value="Kolkata">Kolkata</option>
+             <option value="Bengaluru">Bengaluru</option>
+          </select>
+          <p id="select1">Selected Name here...</p>
+
+          <script>
+
+               function myChange(){
+
+                    var x = document.getElementById("sel").value;
+
+                    document.getElementById("select1").innerHTML = "Selected From the city Name :"+x;
+
+               }
+
+          </script>
+      
+</body>
+</html>

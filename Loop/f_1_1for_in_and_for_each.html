@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For each and for in</title>
+</head>
+<body>
+    <h1>For Each and for in</h1>
+    <p>For Each  </p><br>
+    <p id="demo1"></p>
+    <p>For in</p><br>
+    <p id="demo2"></p>
+    <script>
+
+        const num = [32,54,67,89,90]
+        Text =" ";
+        for(let x in num){
+            Text +=num[x];
+            Text+="<br>"
+
+        }
+        document.getElementById("demo1").innerHTML =Text;
+
+        //using for each 
+        let txt=" "
+        num.forEach(myNumbers);
+        function myNumbers(value,index,array){
+            txt+=value;
+            txt +="<br>"
+
+        }
+        document.getElementById("demo2").innerHTML = txt;
+
+
+    </script>
+
+</body>
+</html>

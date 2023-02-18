@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time and date</title>
+</head>
+<body>
+    <h1>Time and Date Function using javascript</h1>
+    <script>
+        document.write(Date())
+        document.write(new Date())
+        document.write(new Date(1990,10,24,10,20,30,0))
+        const d = new Date();
+        d.toISOString();
+        document.write(d)
+
+        const da = new Date("October 13,2014 11:14:30")
+        document.write(da)
+    </script>
+</body>
+</html>

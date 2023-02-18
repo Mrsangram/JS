@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var keyword using in webpage</title>
+</head>
+
+<body>
+    <p id="name"></p>
+    <button type="button" onclick="mylet()">let keyword</button>
+    <button type="button" onclick="myNone()">None keyword</button>
+    <button type="button" onclick=t"myMutl()">multi keyword</button>
+
+    <script>
+        var x = 54, y = 5;
+        document.getElementById("name").innerHTML = x + y;
+
+        function mylet() {
+            let p = 45, g = 4;
+            document.getElementById("name").innerHTML = p + g
+        }
+
+        function myNone() {
+            k = 3, o = 34;
+            document.getElementById("name").innerHTML = k + o
+        }
+
+        function myMutl() {
+            let uName = "user", carName = "volvo", price = 200;
+            document.getElementById("name").innerHTML = price;
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let and var diffrence</title>
+</head>
+<body>
+     <h1>Defrent between let and var</h1>
+     <p id="lt"></p>
+     <button type="button" onclick="myLet()">let try!</button>
+     <button type="button" onclick="myVar()">var try!</button>
+<script>
+ 
+      function myLet(){
+         //Let don't redeclearing 
+         //var using re-declearing
+
+          let  num = 2;
+           let  num=4;//don't using the declearating
+
+           {
+            let num=3;
+            document.getElementById("lt").innerHTML = num;
+           }
+        }
+           function myVar(){
+            var num1 = 34;
+
+            {
+                var num1 = 34; //it doing the working now this time
+                document.getElementById("lt").innerHTML = num1;
+
+            }
+       
+      }
+</script>
+
+</body>
+</html>

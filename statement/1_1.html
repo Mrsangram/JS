@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement</title>
+</head>
+<body>
+     <p id="sum"></p>
+     <p id="Name"></p>
+     <button type="button" onclick="myClick1()">Click1</button>
+     <button type="button" onclick="myclick2()">Click2</button>
+     <script>
+          let  a=4, b=56;
+            let c=a+b;
+            document.getElementById("sum").innerHTML = c;
+            document.getElementById("Name").innerHTML="<h1>User<h1>"
+
+                function myClick1(){
+                    document.getElementById('sum').innerHTML ="From Click1";
+                }
+                function myclick2(){
+                    document.getElementById("Name").innerHTML = "from click2";
+                }
+            
+     </script>
+</body>
+</html>

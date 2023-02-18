@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+<body>
+    <h1>Table Create</h1>
+
+    <input type="number" value="1" id="snum"/>
+    <input  type="number" value="100" id="lnum"/>
+     <p id="tab"></p>
+     <button type="button" onclick="myTable()">Create Table</button>
+    <script>
+
+        let n =  document.getElementById("snum").value;
+        let m =  document.getElementById("snum").value;
+
+
+        let text ="<table border=2>"
+            for(let j=1;j<11; j++){
+                text+="<tr>"
+                    for(let i=n;i< m+1; i++){
+                    text+="<td>"+j*i+"</td>"
+                    }
+                    text+="</tr>"
+            }
+            text+="</table>"
+
+        function myTable(){
+
+            document.getElementById("tab").innerHTML = text;
+
+        }
+    </script>
+</body>
+</html>

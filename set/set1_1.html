@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using set method</title>
+</head>
+<body>
+     <h1>Set method in javascript</h1>
+     <p id="demo"></p>
+
+     <p>using set method :</p>
+     <p id="st"></p>
+
+      <script>
+
+
+//set method
+            const cars = new Set(["volvo","BMW","SUZUKI","Tata"])
+            Text = "";
+            for(let i of cars){
+                Text +=i;
+                Text+="<br>"
+
+            }
+            document.getElementById("demo").innerHTML = Text;
+            
+
+
+            //using add method 
+
+            cars.add("Honda");
+            //using delete method
+            cars.delete("BMW")
+            Text1 = "";
+            for(let z of cars){
+                Text1 +=z;
+                Text1+="<br>"
+
+            }
+            document.getElementById("st").innerHTML = Text1;
+
+            
+            
+            document.write(cars.values())
+            
+
+        
+
+      </script>
+     
+</body>
+</html>

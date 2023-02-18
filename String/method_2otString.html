@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Change  in string</title>
+</head>
+<body>
+      
+     <h1>String in Changes</h1>
+      <p>exponential method:</p>
+      <p id="exp"></p>
+      <p id="exp1"></p>
+
+       <p>
+        Fixed Method:
+       </p>
+      <p id="FixedM"></p>
+
+      <p>Precision method</p>
+
+       <p id="pre"></p>
+
+
+       <p>Value of in String</p>
+        <p id="val"></p>
+      <script>
+        
+         let x=4.545;
+         document.getElementById("exp").innerHTML = x.toExponential(3);
+         document.getElementById("exp1").innerHTML = x.toExponential(4)
+         document.getElementById("FixedM").innerHTML = x.toFixed(2)
+
+
+         document.getElementById("val").innerHTML = (434+43).valueOf()
+         //Conver number 
+           /*
+
+
+             String to int = parseInt() int to String  toString()
+             int to Float or String to FLoat = parseFloat()
+              Number()
+           */
+
+         document.getElementById("pre").innerHTML = x.toPrecision(3)
+
+
+
+      </script>
+</body>
+</html>

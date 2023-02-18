@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number</title>
+</head>
+
+<body>
+
+    <h1>Using Random Number</h1>
+    <p id="ran"></p>
+
+    <p id="maxNumber"></p>
+    <script>
+        const ran = Math.random(10);
+        document.getElementById("ran").innerHTML = ran;
+
+        const nums = [34, 43, 65, 6, 98, 23,300,65,65];
+
+        let len = nums.length;
+
+        //method 1
+        // nums.sort(function(a,b){return a-b});
+        // document.getElementById("maxNumber").innerHTML = nums[i-1];
+
+
+        let temp = nums[0];
+        let i = 1;
+        while (i < len) {
+
+            if (nums[i] > temp) {
+                temp = nums[i];
+
+
+            }
+            i++;
+
+        }
+
+
+        document.getElementById("maxNumber").innerHTML = temp;
+
+    </script>
+</body>
+
+</html>

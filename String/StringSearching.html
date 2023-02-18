@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Searching</title>
+</head>
+<body>
+     <script>
+        let str = "India is A Biggest Country in the world"
+
+        let txt= "Asia is Earth's largest and most populous continent, located primarily in the Eastern and Northern Hemispheres. It shares the continental landmass of Eurasia with the continent of Europe, and the continental landmass of Afro-Eurasia with Africa and Europe."
+
+
+        //usign indexOf
+         document.write(str.indexOf("i"))
+         document.write(str.lastIndexOf("i"))
+         document.write(str.search("India"))
+
+         document.write(txt.match(/a/g))
+
+
+         //string including in javascript
+
+             document.write(txt.includes("Asia"))
+
+     </script>
+</body>
+</html>

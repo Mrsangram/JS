@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Const usign in array</title>
+</head>
+<body>
+     <h1>Const Using in the Array</h1>
+      <p id="con"></p>
+      <button type="button" onclick="myConst()" >Ar const try!</button>
+      <button type="button" onclick="myConst1()" >Model wtih Name and Price</button>
+
+      <script>
+          function myConst(){
+
+             const cars = ["saab","volvo","Tata"];
+             cars[0] ="Toyota";
+             cars.push("Audi")
+
+             document.getElementById("con").innerHTML = cars;
+          }
+
+          function myConst1(){
+            const car = {type:"Fiat",model:"500",color:"white"};
+            car.color="red";
+            car.owner  = "Sangram"
+
+            document.getElementById("con").innerHTML = "Car Owner Name"+car.owner+car.model+car.color+car.type;
+
+
+          }
+
+      </script>
+</body>
+</html>

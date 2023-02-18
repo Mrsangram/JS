@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Show and Hide</title>
+
+    <style>
+
+*{
+    padding: 0;
+    margin: 0;
+}
+        #box{
+            background: blue;
+            height: 200px;
+            width: auto;
+            display: none;
+
+        }
+
+        input{
+            padding: 10px 20px;
+            background: red;
+            color: aqua;
+            border:none;
+            border-radius: 6px;
+            transition: all 0.5s;
+        }
+        input:hover{
+            background: #ccc;
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <center>
+     <input value="show" type="button" onclick="show()"/>
+     <input type="button" value="hide" onclick="hide()"/><hr>
+
+     <div id="box">
+
+     </div>
+     
+    </center>
+
+    <script>
+         function show(){
+            
+             var s = document.getElementById("box").style.display ="block";
+             s.style.display="black";
+         }
+         function hide(){
+            var h= document.getElementById("box");
+            h.style.display = "none"
+         }
+
+
+    </script>
+</body>
+</html>

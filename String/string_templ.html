@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String template</title>
+</head>
+
+<body>
+
+    <h1>String template</h1>
+    <h3 id="demo1"></h3>
+    <h3 id="demo2"></h3>
+
+    <script>
+        let txt = `Hello world`;
+
+        let text1 = `The quick;
+brown fox
+jumps over
+the lazy dog`;
+        //simple literal support in javascript
+
+        document.write(txt)
+
+        //inside in the string template
+
+        document.getElementById("demo1").innerHTML = txt;
+        //multiline in javascript
+        document.getElementById("demo2").innerHTML =text1;
+
+
+        //substution in javascript
+        let sub  = `Welcome to ${txt},${text1}`;
+        document.write(sub)
+
+
+
+
+    </script>
+</body>
+
+</html>

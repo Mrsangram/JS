@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iteration</title>
+</head>
+<body>
+    <h1>Iteration</h1>
+
+    <script>
+
+        let nums = [43,5,3,65,34]
+
+        let txt= "";
+        nums.forEach(myFunction);
+        function myFunction(value){
+            txt  +=value+"<br>";
+        }
+        document.write(txt)
+
+
+        //map function using in javascript
+        const number1 = [2,4,9,16,25]
+        const number2 = number1.map(myFunction1)
+
+        function myFunction1(value,index,array){
+            return value**2;
+        }
+
+        document.write(number2)
+        //filter method  in the array
+
+        const fil = number1.filter(myFill)
+
+        function myFill(value,index,array){
+            return value>10;
+
+        }
+
+        document.write("After Filletering to create new Arrayn \n\n\t")
+        document.write(fil)
+
+
+        //reduce number
+
+        let sum  = number1.reduce(myReduce);
+
+        function myReduce(total,value,index,array){
+            return total+value;
+
+        }
+
+        document.write("*************After Reduce function Using to total Elelement Sum  ==>")
+        document.write(sum);
+
+        //findIndex;
+        //find();
+        //reduceRight();
+        //every();
+        //lastIndexOf();
+        //indexOf();
+    </script>
+</body>
+</html>

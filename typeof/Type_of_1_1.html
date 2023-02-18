@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type of </title>
+</head>
+
+<body>
+    <h1>Type of in javascript</h1>
+
+    <p>forEach Loop</p>
+    <p id="demo"></p>
+
+
+    <p>Values method </p>
+    <p id="demo1"></p>
+
+    <script>
+
+        const letters = new Set(["a", "b", "c"])
+
+        //letters 
+        letters.add("g")
+        letters.add("k")
+
+
+        //forEach() loop
+
+
+        let text = " "
+        letters.forEach(function (value) {
+            text += value;
+            text += "<br>"
+        })
+        document.getElementById("demo").innerHTML = text
+        //values() method
+        document.write(letters.values())
+
+        let text1 = "";
+        for (const x of letters.values()) {
+            text1 += x + "<br>";
+        }
+
+        
+        document.getElementById("demo1").innerHTML = text1;
+
+
+
+
+    </script>
+</body>
+
+</html>

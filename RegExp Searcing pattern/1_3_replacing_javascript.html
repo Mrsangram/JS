@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Search in javascripts</title>
+</head>
+<body>
+     <h1>Regular Search  in javascript</h1>
+
+     <button type="button" onclick="myFunction()">Try it!</button>
+
+     <p id="demo">india has been a federal republic since 1950, governed in a democratic parliamentary system. It is a pluralistic, multilingual and multi-ethnic society. India's population grew from 361 million in 1951 to 1.211 billion in 2011.[61] During the same time, its nominal per capita income increased from US$64 annually to US$1,498, and its literacy rate from 16.6% to 74%. From being a comparatively destitute country in 1951,[62] India has become a fast-growing major economy and a hub for information technology services, with an expanding middle class.[63] It has a space programme which includes several planned or completed extraterrestrial missions. Indian movies, music, and spiritual teachings play an increasing role in global culture.[64] India has substantially reduced its rate of poverty, though at the cost of increasing economic inequality.[65] India is a nuclear-weapon state, which ranks high in military expenditure. It has disputes over Kashmir with its neighbours, Pakistan and China, unresolved since the mid-20th century.[66] Among the socio-economic challenges India faces are gender inequality, child malnutrition,[67] and rising levels of air pollution.[68] India's land is megadiverse, with four biodiversity hotspots.[69] Its forest cover comprises 21.7% of its area.[70] India's wildlife, which has traditionally been viewed with tolerance in India's culture,[71] is supported among these forests, and elsewhere, in protected habitats.</p>
+
+
+     <h3>Replace all same text in javascript</h3>
+     <p id="demo2"></p>
+
+     <script>
+       
+       function myFunction(){
+        const text = document.getElementById("demo").innerHTML ;
+        document.getElementById("demo").innerHTML = text.replace("india","Greate India")
+        document.getElementById("demo2").innerHTML  = text.replaceAll(/india/ig,"Greate india")
+       }
+
+       
+     </script>
+</body>
+</html>

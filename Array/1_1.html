@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array in javascript</title>
+</head>
+<body>
+     
+      <h1>Array using javascript</h1>
+      <p>Befour using Array</p>
+        <p id="c1"></p>
+        <p id="c2"></p>
+        <p id="c3"></p>
+
+
+        <p> After Using Array</p>
+
+         <p id="All"></p>
+
+
+         <p>Create a Array for Any Elements</p>
+         <p id="cr1"></p>
+      <script>
+          let car1= "Saab";
+          
+          let car2 = "Volvo";
+          let car3 = "BMW";
+          document.getElementById("c1").innerHTML =car1;
+          document.getElementById("c2").innerHTML =car2;
+          document.getElementById("c3").innerHTML =car3;
+            
+
+          // Using in Array
+
+           
+
+           let cars = ["Alto","BMW","Toyota"]
+           document.getElementById("All") .innerHTML = cars;
+
+
+            //new keyword in using in javascript
+
+             const cars1 = new Array("Saab","Volvo","BMW");
+             
+             document.getElementById("cr1").innerHTML = cars1;
+
+             //indexing keyword in using javascript
+              document.write(cars[1])
+              cars[1] ="Honda";
+              document.write(cars[1])
+
+              
+
+      </script>
+</body>
+</html>

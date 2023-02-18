@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arithematic Operaters</title>
+</head>
+<body>
+     <h2>All Arithematic Operaters</h2>
+     <p id="artm"></p>
+      <button type="button"  onclick="btnSum()">sum</button>
+      <button type="button" onclick="btnSub()">sub</button>
+      <button type="button" onclick="btnMult()">Multi</button>
+      <button type="button" onclick="btnDev()">Devision</button>
+     <script>
+          let  a=3,b=5;
+
+            function btnSum(){
+                 document.getElementById("artm").innerHTML = a+b;
+            }
+            
+            function btnSub(){
+                 document.getElementById("artm").innerHTML = a-b;
+            }
+            
+            function btnMult(){
+                 document.getElementById("artm").innerHTML = a**b;
+            }
+            
+            function btnDev(){
+                 document.getElementById("artm").innerHTML = a/b;
+            }
+     </script>
+</body>
+</html>

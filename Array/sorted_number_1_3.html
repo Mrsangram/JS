@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numberical</title>
+</head>
+<body>
+    
+     <h1>Numberics using javascript</h1>
+       
+        <p id="num"></p>
+        
+        <p id="com"></p>
+        <input type="number" value="1" id="num1"/>
+        <input type="number" value="2" id="num2"/>
+        <button type="button" onclick="myFun()">Biggerst Number</button>
+     <script>
+         const num = [1,2,43,6,8,23,100,33]
+         num.sort(function(a,b){return a-b;})
+
+         
+
+         document.getElementById("num").innerHTML = num;
+         let num1 = document.getElementById("num1").value ;
+         let num2 = document.getElementById("num2").value;
+         
+         function myFun(){
+         if(num1<num2){
+            document.getElementById("com").innerHTML = num2;
+         }
+         else{
+            document.getElementById("com").innerHTML =num1;
+         }
+        }
+     </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Create Div using javascript</title>
+    <style>
+
+        input,button{
+            padding: 5px 10px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+
+
+<body>
+
+    <input type="text" placeholder="Enter the div weight.." name="" id="weight">
+    <br>
+    <input type="text" name="" id="height" placeholder="Enter the Div height...">
+    <br>
+    <input type="text" placeholder="Entehr Background color..." name="" id="back">
+ <br>
+    <button type="button" onclick="create()">Create</button>
+    <br>
+    <p id="rev">
+
+    </p>
+
+
+    <script>
+
+   function create(){
+    var w = document.getElementById("weight").value;
+    var h = document.getElementById("height").value;
+    var bk = document.getElementById("back").value;
+    var show = document.getElementById("rev");
+
+    show.style.height = h;
+    show.style.weight =w;
+    show.style.background = bk;
+
+
+   }
+
+    </script>
+</body>
+
+</html>

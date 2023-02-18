@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method using in javascript</title>
+
+</head>
+
+<body>
+
+    <h1>Using Method in javascript</h1>
+    <script>
+        const fruits = ["Apple", "Banana", "Kiwi"]
+
+
+        //using push operation in javascript
+        fruits.push("Orange")
+        document.write(fruits)
+
+        //pop using javascript
+
+        fruits.pop();
+        document.write("**************************")
+        document.write(fruits)
+        //shifting element usign javascript
+        document.write("***********************")
+        fruits.shift();
+        document.write(fruits)
+
+
+        //unshift in javascript
+
+        document.write("******************Unshift using =>>>>")
+        fruits.unshift();
+        document.write(fruits)
+
+
+        //lenght of the  array
+
+        document.write(fruits.length)
+
+        //delete keyword in javascript
+
+        delete fruits[0];
+        document.write("********** After Delete==>>")
+        document.write(fruits)
+
+        //conconect in the Array
+
+        const NonFruits = ["Potato","Pumpkin","Carrote"]
+        const  ANimal = ["Monkey","Lione","Pochinkey"]
+
+        const myConst = NonFruits.concat(fruits)
+        document.write(myConst)
+        document.write(NonFruits.concat(ANimal,fruits))
+
+
+
+    </script>
+
+</body>
+
+</html>
